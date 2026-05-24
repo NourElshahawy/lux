@@ -1,0 +1,186 @@
+@media (max-width: 991px) {
+    .hero .caption {
+        width: 65%;
+    }
+
+    .about-img img {
+        height: 300px;
+    }
+
+    .about-text {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .text-aboutus ul li::after {
+        display: none;
+    }
+
+    .text-aboutus ul li {
+        flex-direction: column;
+    }
+
+    /* .app-screen .owl-screen .item{
+        height: 300px;
+    } */
+    .pooster-text h3 {
+        font-size: 30px;
+
+    }
+
+    .pooster-text p {
+        font-size: 20px;
+    }
+
+    .download-app a {
+        width: 100%;
+    }
+
+    .pooster-img {
+        height: 300px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .end-footer {
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .end-footer .footer-contact p,
+    .end-footer .footer-copyright p {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-contact {
+        order: 3;
+    }
+
+    .footer-contact p {
+        font-size: 18px;
+    }
+
+    .jadara {
+        order: 1;
+    }
+
+    .footer-copyright {
+        order: 2;
+    }
+
+    .ask-home .row {
+
+        flex-direction: column-reverse;
+    }
+
+    .img-aboutus-container {
+        width: 75%;
+    }
+
+    .hero {
+        padding-top: 24px;
+    }
+
+    .grid-bg {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+
+    .about-us-section .row {
+        flex-direction: column;
+    }
+
+    .profile .logout-form form {
+        width: 100%;
+    }
+
+    .detail-row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding-top: 50px;
+    }
+
+    .hero .caption {
+        width: 80%;
+    }
+
+    .img-aboutus-container {
+        width: 90%;
+    }
+
+    .img-aboutus {
+        width: 100%;
+    }
+
+    .hero .img-hero img.sahpe {
+        width: 95px;
+        top: 20px;
+        right: -65px;
+    }
+
+    .hero .img-hero img.sahpe-2 {
+        width: 95px;
+        top: 200px;
+        left: -75px;
+    }
+
+    .become-Seller .main-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    .img-aboutus-container {
+        width: 100%;
+    }
+
+    .grid-bg {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 150px);
+    }
+
+    .owl-carousel .owl-item img {
+
+        object-fit: contain;
+    }
+
+    .commission-image {
+        transform: scale(3);
+        top: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .img-aboutus {
+        min-height: 350px;
+    }
+
+    .hero .img-hero {
+        width: min(500px, 87%);
+    }
+
+    .main-btn {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 3px 8px;
+    }
+
+    /* Profile */
+    .profile .nav-profile .nav-pills .nav-link figure {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile .nav-profile .nav-pills .nav-link figure img {
+        width: 18px;
+        height: 18px;
+    }
+}

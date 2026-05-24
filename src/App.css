@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "font_main";
+  src: url("../fonts/ArbFONTS-Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "font_medium";
+  src: url("../fonts/ArbFONTS-Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "font_bold";
+  src: url("../fonts/ArbFONTS-Somar-Bold.otf");
+}
+
+@font-face {
+  font-family: "semiBold";
+  src: url("../fonts/ArbFONTS-Somar-SemiBold.otf");
+}
+
+:root {
+  --main-color: #8F723B;
+  --red-color: rgba(255, 59, 59, 1);
+  --color-white: #fff;
+  --color-black: #0d0d0d;
+  --Bg-HeadTitle: #2A6D43;
+  --color-black2: #333333;
+  --color-text: #262626;
+  --color-Primary1: #846937;
+  --color-Primary2: #A28245;
+  --color-Primary3: #FBEFDF;
+  --color-Primary4: #FFFAF2;
+  --color-Primary5: #3A6E42;
+  --color-gray: #8D8F95;
+  --color-border: #E4E4E4;
+}
+
+li {
+  display: block;
+}
+
+i {
+  line-height: 0;
+}
+
+* {
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  --scrollbarBG: #d3d0d05b;
+  --thumbBG: var(--color-Primary2);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+button:focus,
+a {
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-Primary1);
+  font-size: 22px;
+}
+
+ul {
+  margin: auto;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+input,
+button {
+  font-family: "font_main";
+}
+
+h1 {
+  font-size: 50px;
+
+  font-family: "font_bold";
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 30px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0;
+  line-height: 30px;
+}
+
+p {
+  font-size: 22px;
+  margin: 0;
+  line-height: 30px;
+  color: var(--color-gray);
+}
+
+a,
+button,
+img,
+.form-control {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+::selection {
+  color: #fff !important;
+  background-color: var(--color-Primary2) !important;
+}
+
+body {
+  background: var(--color-white);
+  font-family: "font_main";
+  font-weight: 400;
+  padding: 0;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  color: var(--color-black);
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 0;
+  border: 0 solid var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+.mt-10 {
+  margin-top: 100px;
+}
