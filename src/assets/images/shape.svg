@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1653" height="1561" viewBox="0 0 1653 1561" fill="none">
+  <style>
+    @keyframes dash-flow {
+      from { stroke-dashoffset: 126; }
+      to   { stroke-dashoffset: 0; }
+    }
+    .line1, .line2 {
+      animation: dash-flow 1.4s linear infinite;
+    }
+  </style>
+
+  <path
+    class="line1"
+    d="M20.502 1149.09C76.8184 1113 206.657 1130.3 315.209 1442.13C334.85 1498.56 403.657 1523.32 455.07 1492.89C650.519 1377.21 928.174 1279.93 1048.09 1467.65C1076.6 1512.28 1131.8 1540.32 1180.63 1519.83C1330.86 1456.79 1538.77 1385.54 1603.37 1422.84"
+    stroke="white" stroke-width="41" stroke-linecap="round" stroke-dasharray="63 63"
+  />
+
+  <path
+    class="line2"
+    d="M25.2046 563.798C65.6708 510.038 194.696 481.019 407.279 740.474C443.36 784.512 512.974 783.729 548.611 739.331C692.348 560.259 923.397 366.489 1103.27 507.595C1142.98 538.743 1201.55 545.265 1238.31 510.692C1357.32 398.762 1530.06 256.68 1604.34 269.275"
+    stroke="white" stroke-width="16" stroke-linecap="round" stroke-dasharray="63 63"
+  />
+</svg>

@@ -1,0 +1,493 @@
+.bg-login {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+
+/* login style */
+.login-container {
+    height: 100vh;
+    width: 50%;
+    background-image: linear-gradient(45deg, #846937, #A28245);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border-radius: 0 30px 30px 0;
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+
+.login-container .grid-bg {
+    grid-template-rows: repeat(6, 150px);
+    z-index: -1;
+}
+
+.login-logo {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.login-text {
+    width: 80%;
+    height: 20%;
+    padding: 0 20px;
+    color: var(--neutral-50, #FAFAFA);
+    font-weight: 300;
+    font-size: 20px;
+    text-align: right;
+}
+
+.login-users {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-users-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-users-text h2 {
+    color: #262626;
+    font-weight: 600;
+    font-style: Medium;
+    font-size: 24px;
+    text-align: right;
+}
+
+.login-users-text span {
+    color: #262626;
+    font-weight: 300;
+    font-style: Medium;
+    font-size: 16px;
+    text-align: right;
+}
+
+.users-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.vendor,
+.buyer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.users-img{
+    border-radius: 50%;
+    background-color: #D4D4D4;
+    width: fit-content;
+    overflow: hidden;   
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 14px 5px 0
+}
+
+.vendor.active .users-img,
+.buyer.active .users-img {
+    background-color: var(--main-color);;
+}
+.vendor.active .users-img img,
+.buyer.active .users-img img {
+    filter: brightness(0) invert(1);
+}
+
+
+.users-img.selectUser{
+    background-color: var(--color-Primary2);
+}
+
+
+.users-img.selectUser img{
+    filter: brightness(0) invert(1);
+}
+
+.users-img img,
+.users-img img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.vendor span,
+.buyer span {
+    color: #262626;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    text-align: right;
+}
+
+.users-container .active img {
+    transform: scale(1.1);
+}
+
+.users-container .active span {
+    color: var(--color-Primary1);
+}
+
+.btn-login {
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(45deg, #846937, #A28245);
+    color: #fff;
+    border: none;
+    padding: 13px 44px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.btn-login:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.field-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.form-login form,
+.users-page {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.field-label {
+    font-size: 18px;
+    color: #575757;
+    text-align: right;
+}
+
+.phone-input,
+.text-input {
+    direction: rtl;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1.5px solid #E6E6E6;
+    background: #FAFAFA;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    height: 46px;
+}
+
+.phone-input:focus,
+.text-input:focus,
+.otp-inputs input:focus {
+    border-color: var(--color-Primary1);
+    box-shadow: 0 0 0 3px rgba(132, 105, 55, 0.2);
+}
+
+#usersSection,
+#formLogin,
+#activationCode,
+#register {
+    display: none;
+}
+
+#usersSection {
+    display: flex;
+}
+
+.visible {
+    display: flex !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.verfication {
+    align-items: flex-start;
+}
+
+.create-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.create-account span {
+    color: #575757;
+    font-size: 16px;
+}
+
+.form-login .login-users-text {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+    justify-content: center;
+}
+
+.otp-inputs {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.otp-inputs input {
+    
+    width: calc(100% / 6);
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1.5px solid #E6E6E6;
+    background: #FAFAFA;
+    border-radius: 8px;
+    outline: none;
+    padding: 0;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* login style end */
+
+/* media queries */
+/* ========== Large Tablets ========== */
+@media (max-width: 1200px) {
+
+    .form-login form,
+    .users-page {
+        width: 100%;
+    }
+
+    .login-container,
+    .login-users {
+        width: 50%;
+    }
+
+    .login-logo img {
+        width: 170px;
+    }
+
+    .login-text {
+        font-size: 18px;
+        width: 85%;
+    }
+
+    .login-users-text {
+        font-size: 24px;
+    }
+
+    .vendor img,
+    .buyer img {
+        width: 70px;
+    }
+
+    .vendor span,
+    .buyer span {
+        font-size: 16px;
+    }
+
+    .btn-login {
+        /* width: 60%; */
+        padding: 12px 35px;
+    }
+
+    .login-users {
+        padding: 40px 20px;
+    }
+}
+
+
+/* ========== Tablets ========== */
+@media (max-width: 992px) {
+    .login-logo img {
+        width: 150px;
+    }
+
+    .login-text {
+        width: 90%;
+        height: auto;
+        font-size: 17px;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    
+
+    .login-users-text {
+        font-size: 22px;
+    }
+
+    .vendor img,
+    .buyer img {
+        width: 65px;
+    }
+}
+
+
+/* ========== Mobile ========== */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px 15px;
+        min-height: 40vh;
+    }
+
+    .login-logo img {
+        width: 120px;
+    }
+
+    .login-text {
+        font-size: 15px;
+        width: 95%;
+    }
+
+    .login-users {
+        min-height: 60vh;
+        padding: 30px 15px;
+    }
+
+    .login-users-text {
+        font-size: 20px;
+    }
+
+    .users-container {
+        gap: 25px;
+    }
+
+    .vendor img,
+    .buyer img {
+        width: 55px;
+    }
+
+    .vendor span,
+    .buyer span {
+        font-size: 15px;
+    }
+
+    .btn-login {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    .otp-inputs {
+        gap: 5px;
+    }
+}
+
+
+/* ========== Small Mobile ========== */
+@media (max-width: 480px) {
+
+    .login-container,
+    .login-users {
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .login-container {
+        border-radius: 0 0 30px 30px;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .bg-login {
+        flex-direction: column;
+    }
+
+    .login-container {
+        min-height: 35vh;
+        padding: 20px 10px;
+    }
+
+    .login-logo img {
+        width: 100px;
+    }
+
+    .login-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .login-users-text {
+        font-size: 18px;
+    }
+
+    .users-container {
+        gap: 20px;
+    }
+
+    .vendor img,
+    .buyer img {
+        width: 50px;
+    }
+
+    .vendor span,
+    .buyer span {
+        font-size: 14px;
+    }
+
+    .btn-login {
+        /* width: 200px; */
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+
+    .login-users-text h2{
+        font-size: 20px; 
+    }
+
+    .field-label {
+        font-size: 16px;
+    }
+
+}
+
+
+
+/* media queries end */
