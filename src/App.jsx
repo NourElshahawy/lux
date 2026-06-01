@@ -15,17 +15,42 @@ import ChatsProfile from './Components/ChatsProfile/ChatsProfile';
 import LogoutProfile from './Components/LogoutProfile/LogoutProfile';
 import Login from './Components/Login/Login';
 import AuthLayout from './Components/AuthLayout/AuthLayout';
+import { AuthProvider } from './Components/context/AuthContext';
+import StatisticsPage from './Components/provider-pages/StatisticsPage/StatisticsPage';
+import AdsPageProvider from './Components/provider-pages/AdsPages/AdsPage';
+import CreateAdvertisement from './Components/provider-pages/CreateAddvertisement/CreateAddvertisement';
+import FormHorseAd from './Components/provider-pages/Forms/FormHorseAd';
+import FormShelterAd from './Components/provider-pages/Forms/FormShelterAd';
+import FormTransferAd from './Components/provider-pages/Forms/FormTransferAd';
+import FormSuppliesAd from './Components/provider-pages/Forms/FormSuppliesAd';
+import FormTrainingAd from './Components/provider-pages/Forms/FormTrainingAd';
+import TransferFund from './Components/provider-pages/TransferFund/TransferFund';
+import CommissionPayment from './Components/provider-pages/CommissionPayment/CommissionPayment';
+import TypePayment from './Components/provider-pages/TypePayment/TypePayment';
+
+
 
 
 
 const router = createBrowserRouter([
-  {path: "", element: <Layout />, children:[
+  {path: "/", element: <Layout />, children:[  
     {index: true, element: <HomePage />},
     {path: "AdsPage", element: <AdsPage />},
     {path: "AdsDeatails", element: <AdsDeatails />},
     {path: "ContactusPage", element: <ContactusPage />},
     {path: "Commission", element: <Commission />},
-    {path: "/Profile", element: <Profile />, children: [
+    {path: "statistics", element: <StatisticsPage />},
+    {path: "adsPageProvider", element: <AdsPageProvider />},
+    {path: "create-ad", element: <CreateAdvertisement /> },
+    { path: "create-ad/horses", element: <FormHorseAd /> },
+    { path: "create-ad/shelter", element: <FormShelterAd /> },
+    { path: "create-ad/transfer", element: <FormTransferAd /> },
+    { path: "create-ad/supplies", element: <FormSuppliesAd /> },
+    { path: "create-ad/training", element: <FormTrainingAd /> },
+    { path: "commissionPayment", element: <CommissionPayment /> },
+    { path: "payment-type", element: <TypePayment /> },
+    { path: "transferFunds", element: <TransferFund /> },
+    {path: "Profile", element: <Profile />, children: [
       {index: true, element: <Navigate to="PersonalData" replace />},
       {path: "PersonalData", element: <PersonalData /> },
       {path: "Archives", element: <Archives /> },
@@ -35,19 +60,17 @@ const router = createBrowserRouter([
     {path: "*", element: <Notfound />},
   ]},
 
-  //* auth صفحات الـ
-  {path: "", element: <AuthLayout />, children: [
+  {path: "/", element: <AuthLayout />, children: [  
     { path: "Login", element: <Login /> },
-    ],
-  },
+  ]},
 ]);
 
 
 function App() {
   return (
-    <>
-    <RouterProvider router={router}></RouterProvider>
-    </>
+    <AuthProvider>  
+      <RouterProvider router={router} />
+    </AuthProvider>
   )
 }
 

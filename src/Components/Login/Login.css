@@ -227,12 +227,12 @@
     box-shadow: 0 0 0 3px rgba(132, 105, 55, 0.2);
 }
 
-#usersSection,
+/* #usersSection,
 #formLogin,
 #activationCode,
 #register {
     display: none;
-}
+} */
 
 #usersSection {
     display: flex;
@@ -255,6 +255,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    width: 100%;
+    border: none;
+    background: transparent;
 }
 
 .create-account span {
@@ -291,7 +294,50 @@
     padding: 0;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
+.profile-btn{
+    padding: 4px 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--color-Primary1);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: opacity 0.3s, transform 0.2s;
+    letter-spacing: 0.5px;
+}
 
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: white;
+    z-index: 9999;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.dropdown-menu li{
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
 /* login style end */
 
 /* media queries */
