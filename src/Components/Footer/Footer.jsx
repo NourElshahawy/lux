@@ -21,22 +21,22 @@ export default function Footer() {
                 <div className="footer-links">
                     <ul className="links">
                         <li className="active">
-                            <Link to="#">بيع خيول</Link>
+                            <Link to="/create-ad/horses">بيع خيول</Link>
                         </li>
                         <li>
-                            <Link to="#">ايواء </Link>
+                            <Link to="/create-ad/shelter">ايواء </Link>
                         </li>
                         <li>
-                            <Link to="#">مستلزمات </Link>
+                            <Link to="/create-ad/supplies">مستلزمات </Link>
                         </li>
                         <li>
-                            <Link to="#">نقل </Link>
+                            <Link to="/create-ad/transfer">نقل </Link>
                         </li>
                         <li>
-                            <Link to="#">تدريب </Link>
+                            <Link to="/create-ad/training">تدريب </Link>
                         </li>
                         <li>
-                            <Link to="#">سياسة العمولة </Link>
+                            <Link to="/Commission">سياسة العمولة </Link>
                         </li>
                     </ul>
                 </div>

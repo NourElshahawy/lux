@@ -3450,8 +3450,8 @@ table tbody span.status.sales {
     position: absolute;
     background-color: #fff;
     box-shadow: -8px 8px 20px 5px #1018281A;
-    z-index: -1;
-    opacity: 0;
+    /* z-index: -1;
+    opacity: 0; */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -3759,11 +3759,11 @@ table tbody span.status.sales {
 
 .button {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.addvertisement:last-child {
-    display: none;
-}
+
 
 .get-paid {
     width: 100%;
@@ -3970,6 +3970,7 @@ table tbody span.status.sales {
     overflow: hidden;
     background: #FAFAFA;
     transition: border-color 0.2s;
+    object-fit: contain;
 }
 
 .image-upload-area:hover {
@@ -3995,6 +3996,12 @@ table tbody span.status.sales {
 
 #previewImg {
     object-fit: contain;
+}
+.left-part-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
 }
 
 /* style provider end */
