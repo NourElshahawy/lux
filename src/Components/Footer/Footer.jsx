@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import loginLogo from '../../assets/images/login-logo.svg';
@@ -11,7 +10,7 @@ import facebook from '../../assets/images/face.svg';
 
 export default function Footer() {
     return <>
-        <footer className="footer mr-section" id="footer">
+        <footer className="footer" id="footer">
             <div className="main-container">
                 <div className="footer-logo">
                     <Link to="index.html">

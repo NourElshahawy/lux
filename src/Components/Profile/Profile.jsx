@@ -1,5 +1,8 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import api from '../../services/api';
+
 import personalDataIcon from "../../assets/images/personalData-Icon.svg";
 import archivesIcon from "../../assets/images/archives-icon.svg";
 import chatIcon from "../../assets/images/chat-icon.svg";
@@ -8,6 +11,13 @@ import logoutIcon from "../../assets/images/logout-icon.svg";
 
 
 export default function Profile() {
+
+
+    
+
+
+
+    
     return <>
 
         <section className="profile section">
@@ -70,4 +80,6 @@ export default function Profile() {
 
 
     </>
+        
 }
+

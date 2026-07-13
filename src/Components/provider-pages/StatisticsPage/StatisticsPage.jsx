@@ -38,7 +38,7 @@ export default function StatisticsPage() {
     const [search, setSearch] = useState('');
 
     const filteredData = tableData.filter(item =>
-        item.name.includes(search)
+        item.title?.includes(search) 
     );
 
     return (
